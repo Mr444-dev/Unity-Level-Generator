@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faff3ddfcd252b6449ed4aefcb4f08ef, type: 3}
+  m_Name: CaveRoom_Normal
+  m_EditorClassIdentifier: AILevelGenerator::AILevelGenerator.Data.RoomTemplateData
+  _id: CaveRoom_Normal
+  _displayName: CaveRoom Normal
+  _description: 
+  _type: 0
+  _theme: 2
+  _size: {x: 1, y: 1, z: 1}
+  _weight: 10
+  _difficultyModifier: 0
+  _availableConnections: 63
+  _connectionPoints: []
+  _prefab: {fileID: 0}
+  _prefabOffset: {x: 0, y: 0, z: 0}
+  _allowRotation: 1
+  _allowedRotations:
+  - 0
+  - 90
+  - 180
+  - 270
+  _enemySpawnPoints: []
+  _lootSpawnPoints: []
+  _decorationSpawnPoints: []
+  _compatibleTemplates: []
+  _incompatibleTemplates: []

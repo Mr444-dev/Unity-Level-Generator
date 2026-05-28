@@ -1,0 +1,3065 @@
+{
+    "FormatVersion": 1,
+    "SaveDate": "2026-05-28T19:25:10.3827741Z",
+    "Level": {
+        "LevelId": "9daa5ffce79e4e58b6457d7ec155411e",
+        "Name": "DarkDungeon Level (100 rooms)",
+        "Theme": 0,
+        "BaseDifficulty": 3,
+        "Size": {
+            "x": 10,
+            "y": 1,
+            "z": 10
+        },
+        "Rooms": [
+            {
+                "Id": "7a0ec9f3",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 1,
+                "GridPosition": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "WorldPosition": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 3,
+                "ConnectedRoomIds": [
+                    "b56b6995",
+                    "a21161d8"
+                ],
+                "DifficultyModifier": 0,
+                "IsRequired": true
+            },
+            {
+                "Id": "b56b6995",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1
+                },
+                "WorldPosition": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 5.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 7,
+                "ConnectedRoomIds": [
+                    "726476fc",
+                    "7a0ec9f3",
+                    "7968d569"
+                ],
+                "DifficultyModifier": 0,
+                "IsRequired": false
+            },
+            {
+                "Id": "726476fc",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 2
+                },
+                "WorldPosition": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 10.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 7,
+                "ConnectedRoomIds": [
+                    "c49e90c3",
+                    "b56b6995",
+                    "dde4d58c"
+                ],
+                "DifficultyModifier": 0,
+                "IsRequired": false
+            },
+            {
+                "Id": "c49e90c3",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 4,
+                "GridPosition": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 3
+                },
+                "WorldPosition": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 15.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 7,
+                "ConnectedRoomIds": [
+                    "f8d6dab7",
+                    "726476fc",
+                    "6f0f9773"
+                ],
+                "DifficultyModifier": 0,
+                "IsRequired": false
+            },
+            {
+                "Id": "f8d6dab7",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 4
+                },
+                "WorldPosition": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 20.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 7,
+                "ConnectedRoomIds": [
+                    "2e6297a2",
+                    "c49e90c3",
+                    "bd9ea0a5"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "2e6297a2",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 5
+                },
+                "WorldPosition": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 25.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 7,
+                "ConnectedRoomIds": [
+                    "55b7042e",
+                    "f8d6dab7",
+                    "59785f00"
+                ],
+                "DifficultyModifier": 0,
+                "IsRequired": false
+            },
+            {
+                "Id": "55b7042e",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 6
+                },
+                "WorldPosition": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 30.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 7,
+                "ConnectedRoomIds": [
+                    "f27a0c92",
+                    "2e6297a2",
+                    "48a55cb5"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "f27a0c92",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 7
+                },
+                "WorldPosition": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 35.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 7,
+                "ConnectedRoomIds": [
+                    "d9d5fcc0",
+                    "55b7042e",
+                    "7e341ed0"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "d9d5fcc0",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 8
+                },
+                "WorldPosition": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 40.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 7,
+                "ConnectedRoomIds": [
+                    "a3aed996",
+                    "f27a0c92",
+                    "2cd7beac"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "a3aed996",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 9
+                },
+                "WorldPosition": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 45.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 6,
+                "ConnectedRoomIds": [
+                    "d9d5fcc0",
+                    "7ae43f74"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "a21161d8",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 1,
+                    "y": 0,
+                    "z": 0
+                },
+                "WorldPosition": {
+                    "x": 5.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 11,
+                "ConnectedRoomIds": [
+                    "7968d569",
+                    "da9d2443",
+                    "7a0ec9f3"
+                ],
+                "DifficultyModifier": 0,
+                "IsRequired": false
+            },
+            {
+                "Id": "7968d569",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 1,
+                    "y": 0,
+                    "z": 1
+                },
+                "WorldPosition": {
+                    "x": 5.0,
+                    "y": 0.0,
+                    "z": 5.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "dde4d58c",
+                    "a21161d8",
+                    "b4e12d57",
+                    "b56b6995"
+                ],
+                "DifficultyModifier": 0,
+                "IsRequired": false
+            },
+            {
+                "Id": "dde4d58c",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 1,
+                    "y": 0,
+                    "z": 2
+                },
+                "WorldPosition": {
+                    "x": 5.0,
+                    "y": 0.0,
+                    "z": 10.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "6f0f9773",
+                    "7968d569",
+                    "a8d4548a",
+                    "726476fc"
+                ],
+                "DifficultyModifier": 0,
+                "IsRequired": false
+            },
+            {
+                "Id": "6f0f9773",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 1,
+                    "y": 0,
+                    "z": 3
+                },
+                "WorldPosition": {
+                    "x": 5.0,
+                    "y": 0.0,
+                    "z": 15.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "bd9ea0a5",
+                    "dde4d58c",
+                    "b71be082",
+                    "c49e90c3"
+                ],
+                "DifficultyModifier": 0,
+                "IsRequired": false
+            },
+            {
+                "Id": "bd9ea0a5",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 1,
+                    "y": 0,
+                    "z": 4
+                },
+                "WorldPosition": {
+                    "x": 5.0,
+                    "y": 0.0,
+                    "z": 20.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "59785f00",
+                    "6f0f9773",
+                    "88dcbe8a",
+                    "f8d6dab7"
+                ],
+                "DifficultyModifier": 0,
+                "IsRequired": false
+            },
+            {
+                "Id": "59785f00",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 1,
+                    "y": 0,
+                    "z": 5
+                },
+                "WorldPosition": {
+                    "x": 5.0,
+                    "y": 0.0,
+                    "z": 25.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "48a55cb5",
+                    "bd9ea0a5",
+                    "e4a7ad96",
+                    "2e6297a2"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "48a55cb5",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 4,
+                "GridPosition": {
+                    "x": 1,
+                    "y": 0,
+                    "z": 6
+                },
+                "WorldPosition": {
+                    "x": 5.0,
+                    "y": 0.0,
+                    "z": 30.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "7e341ed0",
+                    "59785f00",
+                    "a5ca5704",
+                    "55b7042e"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "7e341ed0",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 1,
+                    "y": 0,
+                    "z": 7
+                },
+                "WorldPosition": {
+                    "x": 5.0,
+                    "y": 0.0,
+                    "z": 35.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "2cd7beac",
+                    "48a55cb5",
+                    "3246ecd1",
+                    "f27a0c92"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "2cd7beac",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 1,
+                    "y": 0,
+                    "z": 8
+                },
+                "WorldPosition": {
+                    "x": 5.0,
+                    "y": 0.0,
+                    "z": 40.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "7ae43f74",
+                    "7e341ed0",
+                    "e7583bf4",
+                    "d9d5fcc0"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "7ae43f74",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 1,
+                    "y": 0,
+                    "z": 9
+                },
+                "WorldPosition": {
+                    "x": 5.0,
+                    "y": 0.0,
+                    "z": 45.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 14,
+                "ConnectedRoomIds": [
+                    "2cd7beac",
+                    "5e1abac1",
+                    "a3aed996"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "da9d2443",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 2,
+                    "y": 0,
+                    "z": 0
+                },
+                "WorldPosition": {
+                    "x": 10.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 11,
+                "ConnectedRoomIds": [
+                    "b4e12d57",
+                    "d4d67125",
+                    "a21161d8"
+                ],
+                "DifficultyModifier": 0,
+                "IsRequired": false
+            },
+            {
+                "Id": "b4e12d57",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 2,
+                    "y": 0,
+                    "z": 1
+                },
+                "WorldPosition": {
+                    "x": 10.0,
+                    "y": 0.0,
+                    "z": 5.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "a8d4548a",
+                    "da9d2443",
+                    "e3b95439",
+                    "7968d569"
+                ],
+                "DifficultyModifier": 0,
+                "IsRequired": false
+            },
+            {
+                "Id": "a8d4548a",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 6,
+                "GridPosition": {
+                    "x": 2,
+                    "y": 0,
+                    "z": 2
+                },
+                "WorldPosition": {
+                    "x": 10.0,
+                    "y": 0.0,
+                    "z": 10.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "b71be082",
+                    "b4e12d57",
+                    "7952fda0",
+                    "dde4d58c"
+                ],
+                "DifficultyModifier": 0,
+                "IsRequired": false
+            },
+            {
+                "Id": "b71be082",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 2,
+                    "y": 0,
+                    "z": 3
+                },
+                "WorldPosition": {
+                    "x": 10.0,
+                    "y": 0.0,
+                    "z": 15.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "88dcbe8a",
+                    "a8d4548a",
+                    "6e3d1e19",
+                    "6f0f9773"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "88dcbe8a",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 2,
+                    "y": 0,
+                    "z": 4
+                },
+                "WorldPosition": {
+                    "x": 10.0,
+                    "y": 0.0,
+                    "z": 20.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "e4a7ad96",
+                    "b71be082",
+                    "56607981",
+                    "bd9ea0a5"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "e4a7ad96",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 2,
+                    "y": 0,
+                    "z": 5
+                },
+                "WorldPosition": {
+                    "x": 10.0,
+                    "y": 0.0,
+                    "z": 25.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "a5ca5704",
+                    "88dcbe8a",
+                    "630aecbd",
+                    "59785f00"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "a5ca5704",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 2,
+                    "y": 0,
+                    "z": 6
+                },
+                "WorldPosition": {
+                    "x": 10.0,
+                    "y": 0.0,
+                    "z": 30.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "3246ecd1",
+                    "e4a7ad96",
+                    "37377467",
+                    "48a55cb5"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "3246ecd1",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 2,
+                    "y": 0,
+                    "z": 7
+                },
+                "WorldPosition": {
+                    "x": 10.0,
+                    "y": 0.0,
+                    "z": 35.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "e7583bf4",
+                    "a5ca5704",
+                    "6a564ccd",
+                    "7e341ed0"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "e7583bf4",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 2,
+                    "y": 0,
+                    "z": 8
+                },
+                "WorldPosition": {
+                    "x": 10.0,
+                    "y": 0.0,
+                    "z": 40.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "5e1abac1",
+                    "3246ecd1",
+                    "b9e3df2c",
+                    "2cd7beac"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "5e1abac1",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 2,
+                    "y": 0,
+                    "z": 9
+                },
+                "WorldPosition": {
+                    "x": 10.0,
+                    "y": 0.0,
+                    "z": 45.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 14,
+                "ConnectedRoomIds": [
+                    "e7583bf4",
+                    "e2d73466",
+                    "7ae43f74"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "d4d67125",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 4,
+                "GridPosition": {
+                    "x": 3,
+                    "y": 0,
+                    "z": 0
+                },
+                "WorldPosition": {
+                    "x": 15.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 11,
+                "ConnectedRoomIds": [
+                    "e3b95439",
+                    "6d7ff80c",
+                    "da9d2443"
+                ],
+                "DifficultyModifier": 0,
+                "IsRequired": false
+            },
+            {
+                "Id": "e3b95439",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 3,
+                    "y": 0,
+                    "z": 1
+                },
+                "WorldPosition": {
+                    "x": 15.0,
+                    "y": 0.0,
+                    "z": 5.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "7952fda0",
+                    "d4d67125",
+                    "41076777",
+                    "b4e12d57"
+                ],
+                "DifficultyModifier": 0,
+                "IsRequired": false
+            },
+            {
+                "Id": "7952fda0",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 3,
+                    "y": 0,
+                    "z": 2
+                },
+                "WorldPosition": {
+                    "x": 15.0,
+                    "y": 0.0,
+                    "z": 10.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "6e3d1e19",
+                    "e3b95439",
+                    "bdd8cae5",
+                    "a8d4548a"
+                ],
+                "DifficultyModifier": 0,
+                "IsRequired": false
+            },
+            {
+                "Id": "6e3d1e19",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 3,
+                    "y": 0,
+                    "z": 3
+                },
+                "WorldPosition": {
+                    "x": 15.0,
+                    "y": 0.0,
+                    "z": 15.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "56607981",
+                    "7952fda0",
+                    "79ae6c5f",
+                    "b71be082"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "56607981",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 3,
+                    "y": 0,
+                    "z": 4
+                },
+                "WorldPosition": {
+                    "x": 15.0,
+                    "y": 0.0,
+                    "z": 20.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "630aecbd",
+                    "6e3d1e19",
+                    "1e8a30d5",
+                    "88dcbe8a"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "630aecbd",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 6,
+                "GridPosition": {
+                    "x": 3,
+                    "y": 0,
+                    "z": 5
+                },
+                "WorldPosition": {
+                    "x": 15.0,
+                    "y": 0.0,
+                    "z": 25.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "37377467",
+                    "56607981",
+                    "24f4113f",
+                    "e4a7ad96"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "37377467",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 3,
+                    "y": 0,
+                    "z": 6
+                },
+                "WorldPosition": {
+                    "x": 15.0,
+                    "y": 0.0,
+                    "z": 30.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "6a564ccd",
+                    "630aecbd",
+                    "34b5a0e3",
+                    "a5ca5704"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "6a564ccd",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 3,
+                    "y": 0,
+                    "z": 7
+                },
+                "WorldPosition": {
+                    "x": 15.0,
+                    "y": 0.0,
+                    "z": 35.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "b9e3df2c",
+                    "37377467",
+                    "65af1dc3",
+                    "3246ecd1"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "b9e3df2c",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 3,
+                    "y": 0,
+                    "z": 8
+                },
+                "WorldPosition": {
+                    "x": 15.0,
+                    "y": 0.0,
+                    "z": 40.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "e2d73466",
+                    "6a564ccd",
+                    "bfe324ef",
+                    "e7583bf4"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "e2d73466",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 3,
+                    "y": 0,
+                    "z": 9
+                },
+                "WorldPosition": {
+                    "x": 15.0,
+                    "y": 0.0,
+                    "z": 45.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 14,
+                "ConnectedRoomIds": [
+                    "b9e3df2c",
+                    "14c733e8",
+                    "5e1abac1"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "6d7ff80c",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 4,
+                "GridPosition": {
+                    "x": 4,
+                    "y": 0,
+                    "z": 0
+                },
+                "WorldPosition": {
+                    "x": 20.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 11,
+                "ConnectedRoomIds": [
+                    "41076777",
+                    "887c297d",
+                    "d4d67125"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "41076777",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 4,
+                    "y": 0,
+                    "z": 1
+                },
+                "WorldPosition": {
+                    "x": 20.0,
+                    "y": 0.0,
+                    "z": 5.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "bdd8cae5",
+                    "6d7ff80c",
+                    "96deeb5f",
+                    "e3b95439"
+                ],
+                "DifficultyModifier": 0,
+                "IsRequired": false
+            },
+            {
+                "Id": "bdd8cae5",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 4,
+                "GridPosition": {
+                    "x": 4,
+                    "y": 0,
+                    "z": 2
+                },
+                "WorldPosition": {
+                    "x": 20.0,
+                    "y": 0.0,
+                    "z": 10.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "79ae6c5f",
+                    "41076777",
+                    "b441c792",
+                    "7952fda0"
+                ],
+                "DifficultyModifier": 0,
+                "IsRequired": false
+            },
+            {
+                "Id": "79ae6c5f",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 4,
+                    "y": 0,
+                    "z": 3
+                },
+                "WorldPosition": {
+                    "x": 20.0,
+                    "y": 0.0,
+                    "z": 15.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "1e8a30d5",
+                    "bdd8cae5",
+                    "78bdc4e3",
+                    "6e3d1e19"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "1e8a30d5",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 4,
+                "GridPosition": {
+                    "x": 4,
+                    "y": 0,
+                    "z": 4
+                },
+                "WorldPosition": {
+                    "x": 20.0,
+                    "y": 0.0,
+                    "z": 20.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "24f4113f",
+                    "79ae6c5f",
+                    "2c8992b1",
+                    "56607981"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "24f4113f",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 4,
+                    "y": 0,
+                    "z": 5
+                },
+                "WorldPosition": {
+                    "x": 20.0,
+                    "y": 0.0,
+                    "z": 25.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "34b5a0e3",
+                    "1e8a30d5",
+                    "d5a558ea",
+                    "630aecbd"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "34b5a0e3",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 6,
+                "GridPosition": {
+                    "x": 4,
+                    "y": 0,
+                    "z": 6
+                },
+                "WorldPosition": {
+                    "x": 20.0,
+                    "y": 0.0,
+                    "z": 30.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "65af1dc3",
+                    "24f4113f",
+                    "d5870247",
+                    "37377467"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "65af1dc3",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 4,
+                    "y": 0,
+                    "z": 7
+                },
+                "WorldPosition": {
+                    "x": 20.0,
+                    "y": 0.0,
+                    "z": 35.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "bfe324ef",
+                    "34b5a0e3",
+                    "184aa28a",
+                    "6a564ccd"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "bfe324ef",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 4,
+                    "y": 0,
+                    "z": 8
+                },
+                "WorldPosition": {
+                    "x": 20.0,
+                    "y": 0.0,
+                    "z": 40.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "14c733e8",
+                    "65af1dc3",
+                    "d7cb48bd",
+                    "b9e3df2c"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "14c733e8",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 4,
+                    "y": 0,
+                    "z": 9
+                },
+                "WorldPosition": {
+                    "x": 20.0,
+                    "y": 0.0,
+                    "z": 45.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 14,
+                "ConnectedRoomIds": [
+                    "bfe324ef",
+                    "9fe315c9",
+                    "e2d73466"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "887c297d",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 5,
+                    "y": 0,
+                    "z": 0
+                },
+                "WorldPosition": {
+                    "x": 25.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 11,
+                "ConnectedRoomIds": [
+                    "96deeb5f",
+                    "a1e24be5",
+                    "6d7ff80c"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "96deeb5f",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 4,
+                "GridPosition": {
+                    "x": 5,
+                    "y": 0,
+                    "z": 1
+                },
+                "WorldPosition": {
+                    "x": 25.0,
+                    "y": 0.0,
+                    "z": 5.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "b441c792",
+                    "887c297d",
+                    "19278c4a",
+                    "41076777"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "b441c792",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 5,
+                    "y": 0,
+                    "z": 2
+                },
+                "WorldPosition": {
+                    "x": 25.0,
+                    "y": 0.0,
+                    "z": 10.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "78bdc4e3",
+                    "96deeb5f",
+                    "2aadc7f5",
+                    "bdd8cae5"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "78bdc4e3",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 4,
+                "GridPosition": {
+                    "x": 5,
+                    "y": 0,
+                    "z": 3
+                },
+                "WorldPosition": {
+                    "x": 25.0,
+                    "y": 0.0,
+                    "z": 15.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "2c8992b1",
+                    "b441c792",
+                    "176266c1",
+                    "79ae6c5f"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "2c8992b1",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 4,
+                "GridPosition": {
+                    "x": 5,
+                    "y": 0,
+                    "z": 4
+                },
+                "WorldPosition": {
+                    "x": 25.0,
+                    "y": 0.0,
+                    "z": 20.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "d5a558ea",
+                    "78bdc4e3",
+                    "520ab389",
+                    "1e8a30d5"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "d5a558ea",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 5,
+                    "y": 0,
+                    "z": 5
+                },
+                "WorldPosition": {
+                    "x": 25.0,
+                    "y": 0.0,
+                    "z": 25.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "d5870247",
+                    "2c8992b1",
+                    "678bd9ba",
+                    "24f4113f"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "d5870247",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 5,
+                    "y": 0,
+                    "z": 6
+                },
+                "WorldPosition": {
+                    "x": 25.0,
+                    "y": 0.0,
+                    "z": 30.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "184aa28a",
+                    "d5a558ea",
+                    "f1e03c03",
+                    "34b5a0e3"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "184aa28a",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 5,
+                    "y": 0,
+                    "z": 7
+                },
+                "WorldPosition": {
+                    "x": 25.0,
+                    "y": 0.0,
+                    "z": 35.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "d7cb48bd",
+                    "d5870247",
+                    "4f5532cd",
+                    "65af1dc3"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "d7cb48bd",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 5,
+                    "y": 0,
+                    "z": 8
+                },
+                "WorldPosition": {
+                    "x": 25.0,
+                    "y": 0.0,
+                    "z": 40.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "9fe315c9",
+                    "184aa28a",
+                    "e50d8b27",
+                    "bfe324ef"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "9fe315c9",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 4,
+                "GridPosition": {
+                    "x": 5,
+                    "y": 0,
+                    "z": 9
+                },
+                "WorldPosition": {
+                    "x": 25.0,
+                    "y": 0.0,
+                    "z": 45.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 14,
+                "ConnectedRoomIds": [
+                    "d7cb48bd",
+                    "840c9015",
+                    "14c733e8"
+                ],
+                "DifficultyModifier": 2,
+                "IsRequired": false
+            },
+            {
+                "Id": "a1e24be5",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 6,
+                    "y": 0,
+                    "z": 0
+                },
+                "WorldPosition": {
+                    "x": 30.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 11,
+                "ConnectedRoomIds": [
+                    "19278c4a",
+                    "5f1c530e",
+                    "887c297d"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "19278c4a",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 6,
+                    "y": 0,
+                    "z": 1
+                },
+                "WorldPosition": {
+                    "x": 30.0,
+                    "y": 0.0,
+                    "z": 5.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "2aadc7f5",
+                    "a1e24be5",
+                    "71b73141",
+                    "96deeb5f"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "2aadc7f5",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 6,
+                    "y": 0,
+                    "z": 2
+                },
+                "WorldPosition": {
+                    "x": 30.0,
+                    "y": 0.0,
+                    "z": 10.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "176266c1",
+                    "19278c4a",
+                    "49ed9eff",
+                    "b441c792"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "176266c1",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 6,
+                    "y": 0,
+                    "z": 3
+                },
+                "WorldPosition": {
+                    "x": 30.0,
+                    "y": 0.0,
+                    "z": 15.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "520ab389",
+                    "2aadc7f5",
+                    "e3286761",
+                    "78bdc4e3"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "520ab389",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 6,
+                    "y": 0,
+                    "z": 4
+                },
+                "WorldPosition": {
+                    "x": 30.0,
+                    "y": 0.0,
+                    "z": 20.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "678bd9ba",
+                    "176266c1",
+                    "aa47d2c8",
+                    "2c8992b1"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "678bd9ba",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 6,
+                    "y": 0,
+                    "z": 5
+                },
+                "WorldPosition": {
+                    "x": 30.0,
+                    "y": 0.0,
+                    "z": 25.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "f1e03c03",
+                    "520ab389",
+                    "d609ba8b",
+                    "d5a558ea"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "f1e03c03",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 6,
+                    "y": 0,
+                    "z": 6
+                },
+                "WorldPosition": {
+                    "x": 30.0,
+                    "y": 0.0,
+                    "z": 30.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "4f5532cd",
+                    "678bd9ba",
+                    "227fa61c",
+                    "d5870247"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "4f5532cd",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 4,
+                "GridPosition": {
+                    "x": 6,
+                    "y": 0,
+                    "z": 7
+                },
+                "WorldPosition": {
+                    "x": 30.0,
+                    "y": 0.0,
+                    "z": 35.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "e50d8b27",
+                    "f1e03c03",
+                    "6d3ce385",
+                    "184aa28a"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "e50d8b27",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 6,
+                    "y": 0,
+                    "z": 8
+                },
+                "WorldPosition": {
+                    "x": 30.0,
+                    "y": 0.0,
+                    "z": 40.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "840c9015",
+                    "4f5532cd",
+                    "b244163b",
+                    "d7cb48bd"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "840c9015",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 6,
+                    "y": 0,
+                    "z": 9
+                },
+                "WorldPosition": {
+                    "x": 30.0,
+                    "y": 0.0,
+                    "z": 45.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 14,
+                "ConnectedRoomIds": [
+                    "e50d8b27",
+                    "95a9b432",
+                    "9fe315c9"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "5f1c530e",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 7,
+                    "y": 0,
+                    "z": 0
+                },
+                "WorldPosition": {
+                    "x": 35.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 11,
+                "ConnectedRoomIds": [
+                    "71b73141",
+                    "cf591f1e",
+                    "a1e24be5"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "71b73141",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 7,
+                    "y": 0,
+                    "z": 1
+                },
+                "WorldPosition": {
+                    "x": 35.0,
+                    "y": 0.0,
+                    "z": 5.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "49ed9eff",
+                    "5f1c530e",
+                    "9381e803",
+                    "19278c4a"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "49ed9eff",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 7,
+                    "y": 0,
+                    "z": 2
+                },
+                "WorldPosition": {
+                    "x": 35.0,
+                    "y": 0.0,
+                    "z": 10.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "e3286761",
+                    "71b73141",
+                    "53f3d641",
+                    "2aadc7f5"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "e3286761",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 7,
+                    "y": 0,
+                    "z": 3
+                },
+                "WorldPosition": {
+                    "x": 35.0,
+                    "y": 0.0,
+                    "z": 15.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "aa47d2c8",
+                    "49ed9eff",
+                    "9d4909a9",
+                    "176266c1"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "aa47d2c8",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 7,
+                    "y": 0,
+                    "z": 4
+                },
+                "WorldPosition": {
+                    "x": 35.0,
+                    "y": 0.0,
+                    "z": 20.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "d609ba8b",
+                    "e3286761",
+                    "2d4d6299",
+                    "520ab389"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "d609ba8b",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 7,
+                    "y": 0,
+                    "z": 5
+                },
+                "WorldPosition": {
+                    "x": 35.0,
+                    "y": 0.0,
+                    "z": 25.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "227fa61c",
+                    "aa47d2c8",
+                    "c036ebd6",
+                    "678bd9ba"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "227fa61c",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 7,
+                    "y": 0,
+                    "z": 6
+                },
+                "WorldPosition": {
+                    "x": 35.0,
+                    "y": 0.0,
+                    "z": 30.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "6d3ce385",
+                    "d609ba8b",
+                    "9d5a23de",
+                    "f1e03c03"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "6d3ce385",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 7,
+                    "y": 0,
+                    "z": 7
+                },
+                "WorldPosition": {
+                    "x": 35.0,
+                    "y": 0.0,
+                    "z": 35.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "b244163b",
+                    "227fa61c",
+                    "49da2838",
+                    "4f5532cd"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "b244163b",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 7,
+                    "y": 0,
+                    "z": 8
+                },
+                "WorldPosition": {
+                    "x": 35.0,
+                    "y": 0.0,
+                    "z": 40.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "95a9b432",
+                    "6d3ce385",
+                    "e43681b2",
+                    "e50d8b27"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "95a9b432",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 7,
+                    "y": 0,
+                    "z": 9
+                },
+                "WorldPosition": {
+                    "x": 35.0,
+                    "y": 0.0,
+                    "z": 45.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 14,
+                "ConnectedRoomIds": [
+                    "b244163b",
+                    "e4900fbd",
+                    "840c9015"
+                ],
+                "DifficultyModifier": 2,
+                "IsRequired": false
+            },
+            {
+                "Id": "cf591f1e",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 4,
+                "GridPosition": {
+                    "x": 8,
+                    "y": 0,
+                    "z": 0
+                },
+                "WorldPosition": {
+                    "x": 40.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 11,
+                "ConnectedRoomIds": [
+                    "9381e803",
+                    "49e48424",
+                    "5f1c530e"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "9381e803",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 8,
+                    "y": 0,
+                    "z": 1
+                },
+                "WorldPosition": {
+                    "x": 40.0,
+                    "y": 0.0,
+                    "z": 5.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "53f3d641",
+                    "cf591f1e",
+                    "eb7d373c",
+                    "71b73141"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "53f3d641",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 8,
+                    "y": 0,
+                    "z": 2
+                },
+                "WorldPosition": {
+                    "x": 40.0,
+                    "y": 0.0,
+                    "z": 10.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "9d4909a9",
+                    "9381e803",
+                    "77568385",
+                    "49ed9eff"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "9d4909a9",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 8,
+                    "y": 0,
+                    "z": 3
+                },
+                "WorldPosition": {
+                    "x": 40.0,
+                    "y": 0.0,
+                    "z": 15.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "2d4d6299",
+                    "53f3d641",
+                    "63d0c100",
+                    "e3286761"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "2d4d6299",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 8,
+                    "y": 0,
+                    "z": 4
+                },
+                "WorldPosition": {
+                    "x": 40.0,
+                    "y": 0.0,
+                    "z": 20.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "c036ebd6",
+                    "9d4909a9",
+                    "11765b20",
+                    "aa47d2c8"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "c036ebd6",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 8,
+                    "y": 0,
+                    "z": 5
+                },
+                "WorldPosition": {
+                    "x": 40.0,
+                    "y": 0.0,
+                    "z": 25.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "9d5a23de",
+                    "2d4d6299",
+                    "e944af0a",
+                    "d609ba8b"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "9d5a23de",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 8,
+                    "y": 0,
+                    "z": 6
+                },
+                "WorldPosition": {
+                    "x": 40.0,
+                    "y": 0.0,
+                    "z": 30.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "49da2838",
+                    "c036ebd6",
+                    "5682e4b1",
+                    "227fa61c"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "49da2838",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 8,
+                    "y": 0,
+                    "z": 7
+                },
+                "WorldPosition": {
+                    "x": 40.0,
+                    "y": 0.0,
+                    "z": 35.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "e43681b2",
+                    "9d5a23de",
+                    "944c5433",
+                    "6d3ce385"
+                ],
+                "DifficultyModifier": 2,
+                "IsRequired": false
+            },
+            {
+                "Id": "e43681b2",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 6,
+                "GridPosition": {
+                    "x": 8,
+                    "y": 0,
+                    "z": 8
+                },
+                "WorldPosition": {
+                    "x": 40.0,
+                    "y": 0.0,
+                    "z": 40.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 15,
+                "ConnectedRoomIds": [
+                    "e4900fbd",
+                    "49da2838",
+                    "0a1eab26",
+                    "b244163b"
+                ],
+                "DifficultyModifier": 2,
+                "IsRequired": false
+            },
+            {
+                "Id": "e4900fbd",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 4,
+                "GridPosition": {
+                    "x": 8,
+                    "y": 0,
+                    "z": 9
+                },
+                "WorldPosition": {
+                    "x": 40.0,
+                    "y": 0.0,
+                    "z": 45.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 14,
+                "ConnectedRoomIds": [
+                    "e43681b2",
+                    "a7c7f907",
+                    "95a9b432"
+                ],
+                "DifficultyModifier": 2,
+                "IsRequired": false
+            },
+            {
+                "Id": "49e48424",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 3,
+                "GridPosition": {
+                    "x": 9,
+                    "y": 0,
+                    "z": 0
+                },
+                "WorldPosition": {
+                    "x": 45.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 9,
+                "ConnectedRoomIds": [
+                    "eb7d373c",
+                    "cf591f1e"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "eb7d373c",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 9,
+                    "y": 0,
+                    "z": 1
+                },
+                "WorldPosition": {
+                    "x": 45.0,
+                    "y": 0.0,
+                    "z": 5.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 13,
+                "ConnectedRoomIds": [
+                    "77568385",
+                    "49e48424",
+                    "9381e803"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "77568385",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 9,
+                    "y": 0,
+                    "z": 2
+                },
+                "WorldPosition": {
+                    "x": 45.0,
+                    "y": 0.0,
+                    "z": 10.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 13,
+                "ConnectedRoomIds": [
+                    "63d0c100",
+                    "eb7d373c",
+                    "53f3d641"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "63d0c100",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 4,
+                "GridPosition": {
+                    "x": 9,
+                    "y": 0,
+                    "z": 3
+                },
+                "WorldPosition": {
+                    "x": 45.0,
+                    "y": 0.0,
+                    "z": 15.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 13,
+                "ConnectedRoomIds": [
+                    "11765b20",
+                    "77568385",
+                    "9d4909a9"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "11765b20",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 9,
+                    "y": 0,
+                    "z": 4
+                },
+                "WorldPosition": {
+                    "x": 45.0,
+                    "y": 0.0,
+                    "z": 20.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 13,
+                "ConnectedRoomIds": [
+                    "e944af0a",
+                    "63d0c100",
+                    "2d4d6299"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "e944af0a",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 9,
+                    "y": 0,
+                    "z": 5
+                },
+                "WorldPosition": {
+                    "x": 45.0,
+                    "y": 0.0,
+                    "z": 25.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 13,
+                "ConnectedRoomIds": [
+                    "5682e4b1",
+                    "11765b20",
+                    "c036ebd6"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            },
+            {
+                "Id": "5682e4b1",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 9,
+                    "y": 0,
+                    "z": 6
+                },
+                "WorldPosition": {
+                    "x": 45.0,
+                    "y": 0.0,
+                    "z": 30.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 13,
+                "ConnectedRoomIds": [
+                    "944c5433",
+                    "e944af0a",
+                    "9d5a23de"
+                ],
+                "DifficultyModifier": 2,
+                "IsRequired": false
+            },
+            {
+                "Id": "944c5433",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 6,
+                "GridPosition": {
+                    "x": 9,
+                    "y": 0,
+                    "z": 7
+                },
+                "WorldPosition": {
+                    "x": 45.0,
+                    "y": 0.0,
+                    "z": 35.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 13,
+                "ConnectedRoomIds": [
+                    "0a1eab26",
+                    "5682e4b1",
+                    "49da2838"
+                ],
+                "DifficultyModifier": 2,
+                "IsRequired": false
+            },
+            {
+                "Id": "0a1eab26",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 0,
+                "GridPosition": {
+                    "x": 9,
+                    "y": 0,
+                    "z": 8
+                },
+                "WorldPosition": {
+                    "x": 45.0,
+                    "y": 0.0,
+                    "z": 40.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 13,
+                "ConnectedRoomIds": [
+                    "a7c7f907",
+                    "944c5433",
+                    "e43681b2"
+                ],
+                "DifficultyModifier": 2,
+                "IsRequired": false
+            },
+            {
+                "Id": "a7c7f907",
+                "TemplateId": "DungeonRoom_Exit",
+                "Type": 2,
+                "GridPosition": {
+                    "x": 9,
+                    "y": 0,
+                    "z": 9
+                },
+                "WorldPosition": {
+                    "x": 45.0,
+                    "y": 0.0,
+                    "z": 45.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 12,
+                "ConnectedRoomIds": [
+                    "0a1eab26",
+                    "e4900fbd"
+                ],
+                "DifficultyModifier": 2,
+                "IsRequired": true
+            }
+        ],
+        "EntranceRoom": {
+            "Id": "7a0ec9f3",
+            "TemplateId": "DungeonRoom_Normal",
+            "Type": 1,
+            "GridPosition": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "WorldPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "Rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "Connections": 3,
+            "ConnectedRoomIds": [
+                "b56b6995",
+                "a21161d8"
+            ],
+            "DifficultyModifier": 0,
+            "IsRequired": true
+        },
+        "ExitRoom": {
+            "Id": "a7c7f907",
+            "TemplateId": "DungeonRoom_Exit",
+            "Type": 2,
+            "GridPosition": {
+                "x": 9,
+                "y": 0,
+                "z": 9
+            },
+            "WorldPosition": {
+                "x": 45.0,
+                "y": 0.0,
+                "z": 45.0
+            },
+            "Rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.0
+            },
+            "Connections": 12,
+            "ConnectedRoomIds": [
+                "0a1eab26",
+                "e4900fbd"
+            ],
+            "DifficultyModifier": 2,
+            "IsRequired": true
+        },
+        "BossRooms": [
+            {
+                "Id": "49e48424",
+                "TemplateId": "DungeonRoom_Normal",
+                "Type": 3,
+                "GridPosition": {
+                    "x": 9,
+                    "y": 0,
+                    "z": 0
+                },
+                "WorldPosition": {
+                    "x": 45.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "Rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                "Connections": 9,
+                "ConnectedRoomIds": [
+                    "eb7d373c",
+                    "cf591f1e"
+                ],
+                "DifficultyModifier": 1,
+                "IsRequired": false
+            }
+        ],
+        "GeneratedTimestamp": 1779996308,
+        "Seed": 47570078
+    }
+}

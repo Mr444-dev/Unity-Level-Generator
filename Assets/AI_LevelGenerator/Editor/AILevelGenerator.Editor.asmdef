@@ -1,0 +1,26 @@
+{
+    "name": "AILevelGenerator.Editor",
+    "rootNamespace": "AILevelGenerator.Editor",
+    "references": [
+        "AILevelGenerator",
+        "UniTask",
+        "AILevelGenerator.Examples"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.odin-inspector",
+            "expression": "",
+            "define": "ODIN_INSPECTOR"
+        }
+    ],
+    "noEngineReferences": false
+}

@@ -1,0 +1,391 @@
+﻿```
+╔════════════════════════════════════════════════════════════════════════════╗
+║                    LEVEL SERIALIZER - KOMPLETNA MAPA                        ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━ GRA / APLIKACJA ━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                                                                    ┃
+┃  ┌────────────────────────────────────────────────────────────┐  ┃
+┃  │              GRACZ GENERUJE POZIOM                          │  ┃
+┃  │   "Create dark dungeon with 10 rooms, medium"              │  ┃
+┃  └────────────────────────────────────────────────────────────┘  ┃
+┃                            ↓                                      ┃
+┃  ┌────────────────────────────────────────────────────────────┐  ┃
+┃  │          AILevelGeneratorFacade.GenerateAsync()            │  ┃
+┃  │                                                             │  ┃
+┃  │  🤖 AI GENERUJE POZIOM (pokoje, połączenia, etc.)         │  ┃
+┃  └────────────────────────────────────────────────────────────┘  ┃
+┃                            ↓                                      ┃
+┃  ┌────────────────────────────────────────────────────────────┐  ┃
+┃  │        LevelData level = (w pamięci RAM)                   │  ┃
+┃  │        ├─ 8-10 pokoi (RoomData objects)                   │  ┃
+┃  │        ├─ Połączenia między nimi                           │  ┃
+┃  │        ├─ Temat: DarkDungeon                              │  ┃
+┃  │        ├─ Trudność: Medium                                │  ┃
+┃  │        └─ Metadane (timestamp, seed, etc.)                │  ┃
+┃  └────────────────────────────────────────────────────────────┘  ┃
+┃                            ↓                                      ┃
+┃  ┌──────────────────────────────────────────────────────────────┐ ┃
+┃  │         GRACZ MA WYBÓR - CO ROBIĆ Z POZIOMEM?              │ ┃
+┃  └──────────────────────────────────────────────────────────────┘ ┃
+┃         ↙                    ↓                     ↘               ┃
+┃                                                                    ┃
+┃  ┌────────────┐      ┌─────────────┐       ┌──────────────┐      ┃
+┃  │ OPCJA 1    │      │  OPCJA 2    │       │  OPCJA 3     │      ┃
+┃  │ GRAĆ TERAZ │      │  ZAPISAĆ    │       │  EKSPORTOWAĆ │      ┃
+┃  └────────────┘      └─────────────┘       └──────────────┘      ┃
+┃         ↓                   ↓                       ↓               ┃
+┃   [GameScene]        [Dysk twardy]          [Narzędzia]           ┃
+┃   instantiate()      SaveToFile()           ExportToCSV()         ┃
+┃                                             ExportToGraphML()     ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+
+━━━━━━━━━━━━━━━━━━━━━━━ OPCJA 1: GRAĆ TERAZ ━━━━━━━━━━━━━━━━━━━━━━━
+
+    LevelData level  →  InstantiateLevel(level)  →  🎮 GRAMY!
+    (w pamięci)           (tworzy obiekty w scenie)
+
+
+━━━━━━━━━━━━━━━━━━━━━ OPCJA 2: ZAPISAĆ NA DYSK ━━━━━━━━━━━━━━━━━━
+
+    LevelData level
+         ↓
+    LevelSerializer.SaveToFile(level, "MyGame")
+         ↓
+    ┌─ KONWERTOWANIE DATA → JSON ─┐
+    │  class LevelData            │
+    │  {                          │
+    │    Rooms[],                 │
+    │    Theme,                   │
+    │    Difficulty,              │
+    │    Connections,             │
+    │    ...                      │
+    │  }                          │
+    └─ STRINGOWANIE DO JSON ──────┘
+         ↓
+    Plik na dysku:
+    
+    C:\Users\[User]\AppData\LocalLow\[Company]\[Game]\SavedLevels\MyGame.lvl
+    
+    {
+      "FormatVersion": 1,
+      "SaveDate": "2024-05-28T14:30:45...",
+      "Level": {
+        "LevelId": "abc123...",
+        "Rooms": [...],
+        ...
+      }
+    }
+
+
+━━━━━━━━━━━━━━━━━ OPCJA 2b: ZAŁADUJ PÓŹNIEJ ━━━━━━━━━━━━━━━━━━━
+
+    Dysk (plik MyGame.lvl JSON)
+         ↓
+    LevelSerializer.LoadFromFile("MyGame.lvl")
+         ↓
+    ┌─ WCZYTANIE PLIKU ────────┐
+    │ File.ReadAllText()       │
+    │ JsonUtility.FromJson()   │
+    └─ DESERIALIZACJA ─────────┘
+         ↓
+    LevelData level
+    (wszystkie dane z powrotem!)
+         ↓
+    InstantiateLevel(level)  →  🎮 GRAMY!
+
+
+━━━━━━━━━━━━━━━━━━━━ OPCJA 3: EKSPORTOWAĆ ━━━━━━━━━━━━━━━━━━━━
+
+    LevelData level
+         ↓
+         ├──→ LevelSerializer.ExportToCSV()
+         │         ↓
+         │    CSV TABELA (dla Excela)
+         │    poziomy_analiza.csv
+         │
+         │    Id,Type,X,Y,Z,Difficulty,Connections
+         │    room1,Normal,0,0,0,1,room2;room3
+         │    room2,Boss,1,0,0,3,room1;room4
+         │    ...
+         │         ↓
+         │    📊 Otwórz w Excel
+         │    📊 Analiza danych
+         │    📊 Wylicz statystyki
+         │
+         └──→ LevelSerializer.ExportToGraphML()
+                  ↓
+             GRAPH XML (dla wizualizacji)
+             mapa_poziomu.graphml
+             
+             <graph>
+               <node id="room1"/>
+               <node id="room2"/>
+               <edge source="room1" target="room2"/>
+               ...
+             </graph>
+                 ↓
+             🔗 https://graphonline.ru/
+             🔗 Otwórz plik
+             🔗 Zobaczysz mapę wizualną!
+
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                    GŁÓWNE FUNKCJE I KIEDY ICH UŻYWAĆ                        ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+
+1️⃣ SaveToFile(level, "name")
+   ┌─ KIEDY: Gracz chce zapisać swoją grę
+   ├─ CO ROBI: Konwertuje level do JSON, zapisuje na dysk
+   └─ WYNIK: Plik .lvl w SavedLevels/
+   
+   LevelSerializer.SaveToFile(myLevel, "checkpoint1");
+
+
+2️⃣ LoadFromFile("name.lvl")
+   ┌─ KIEDY: Gracz chce zagrać wszcześniejszy poziom
+   ├─ CO ROBI: Wczytuje JSON z dysku, deserializuje do LevelData
+   └─ WYNIK: LevelData gotowe do gry
+   
+   LevelData loaded = LevelSerializer.LoadFromFile("checkpoint1.lvl");
+
+
+3️⃣ GetSaveDirectory()
+   ┌─ KIEDY: Chcesz wiedzieć gdzie są pliki
+   ├─ CO ROBI: Zwraca ścieżkę do folderu SavedLevels
+   └─ WYNIK: "/Users/.../SavedLevels"
+   
+   string path = LevelSerializer.GetSaveDirectory();
+
+
+4️⃣ GetSavedLevels()
+   ┌─ KIEDY: Chcesz wyświetlić listę do załadowania
+   ├─ CO ROBI: Zwraca tablicę wszystkich .lvl plików
+   └─ WYNIK: string[] z ścieżkami
+   
+   var allLevels = LevelSerializer.GetSavedLevels();
+   foreach (var file in allLevels) { Debug.Log(file); }
+
+
+5️⃣ DeleteSavedLevel(path)
+   ┌─ KIEDY: Gracz chce usunąć zapis
+   ├─ CO ROBI: Usuwa plik z dysku
+   └─ WYNIK: Plik gone
+   
+   LevelSerializer.DeleteSavedLevel("old_save.lvl");
+
+
+6️⃣ ExportToCSV(level)
+   ┌─ KIEDY: Designer chce analizować strukturę w Excelu
+   ├─ CO ROBI: Konwertuje pokoje na tabelę CSV
+   └─ WYNIK: String z danymi CSV
+   
+   string data = LevelSerializer.ExportToCSV(level);
+   File.WriteAllText("analiza.csv", data);
+
+
+7️⃣ ExportToGraphML(level)
+   ┌─ KIEDY: Designer chce wizualną mapę pokoi
+   ├─ CO ROBI: Konwertuje na format GraphML
+   └─ WYNIK: XML plik do wizualizacji
+   
+   string xml = LevelSerializer.ExportToGraphML(level);
+   File.WriteAllText("mapa.graphml", xml);
+
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                         PRAKTYCZNE FLOWCHARTS                               ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+
+GRACZ - GŁÓWNE MENU:
+
+    START
+      ↓
+    [WYGENERUJ] → Generuj nowy poziom → Zapisz w RAM
+      ↓
+    [GRAJ] → Zagrań (z RAM)
+      ↓
+    [ZAPISZ] → Zapisz na dysk (.lvl plik)
+      ↓
+   EXIT
+
+
+GRACZ - ŁADOWANIE GRY:
+
+    START
+      ↓
+    Pokaż listę: GetSavedLevels()
+      ↓
+    Gracz wybiera
+      ↓
+    LoadFromFile()  →  LevelData z dysku
+      ↓
+    [GRAJ] → Zagrań załadowany poziom
+      ↓
+   EXIT
+
+
+DESIGNER - ANALIZA:
+
+    Wygeneruj poziom
+      ↓
+    ExportToCSV()  →  plik.csv
+      ↓
+    Otwórz w Excelu
+      ↓
+    Analiza danych (tabelka)
+      ↓
+    Export raport
+
+
+DESIGNER - WIZUALIZACJA:
+
+    Wygeneruj poziom
+      ↓
+    ExportToGraphML()  →  plik.graphml
+      ↓
+    Otwórz: https://graphonline.ru/
+      ↓
+    Importuj plik
+      ↓
+    Zobaczysz mapę (graficznie pokoje i połączenia)
+      ↓
+    Wyeksportuj obraz
+
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                       STRUKTURA FOLDERU - GDZIE WSZYSTKO JEST              ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+
+Windows:
+┌─ C:\\Users\\[YourName]\\AppData\\LocalLow\\DefaultCompany\\Level Generator AI\\
+│
+└─ SavedLevels/  ← GŁÓWNY FOLDER SERIALIZER
+   ├─ MyGame.lvl              ← Zapisany poziom (JSON)
+   ├─ GameLevel.lvl
+   ├─ export_1430.csv         ← Eksport tabeli
+   ├─ mapa_struktura.graphml  ← Eksport wykresu
+   └─ checkpoint1.lvl
+
+(Unity kod):
+string dir = LevelSerializer.GetSaveDirectory();
+// Zwróci: C:\\Users\\...\\AppData\\LocalLow\\...\\SavedLevels
+
+
+Mac:
+~/Library/Application Support/DefaultCompany/Level Generator AI/SavedLevels/
+
+Android:
+/data/data/com.yourcompany.game/files/SavedLevels/
+
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                          PODSUMOWANIE - TLdr;                              ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+
+1. WYGENERUJ POZIOM
+   ↓
+2. ZAPISZ: LevelSerializer.SaveToFile(level, "name")
+   ↓
+3. ZAŁADUJ: LevelData = LevelSerializer.LoadFromFile("name.lvl")
+   ↓
+4. GRAJ: InstantiateLevel(loadedData)
+   
+   ✓ KONIEC!
+
+
+Lub chcesz danych do analizy:
+
+   5. EKSPORTUJ: LevelSerializer.ExportToCSV(level)
+   6. OTWÓRZ: W Excelu
+
+   ✓ KONIEC!
+
+
+Lub chcesz mapę struktury:
+
+   5. EKSPORTUJ: LevelSerializer.ExportToGraphML(level)
+   6. WIZUALIZUJ: https://graphonline.ru/
+
+   ✓ KONIEC!
+
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                    GOTOWE SZABLONY DO COPY-PASTE                           ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+
+SZABLON 1: Podstawowy save/load
+─────────────────────────────────
+void SaveMyLevel(LevelData level)
+{
+    LevelSerializer.SaveToFile(level, "my_save");
+}
+
+LevelData LoadMyLevel()
+{
+    return LevelSerializer.LoadFromFile("my_save.lvl");
+}
+
+
+SZABLON 2: Z obsługą błędów
+────────────────────────────
+void SaveWithError(LevelData level)
+{
+    try
+    {
+        LevelSerializer.SaveToFile(level, "save");
+        Debug.Log("✓ Zapisano");
+    }
+    catch (System.Exception ex)
+    {
+        Debug.LogError("✗ Błąd: " + ex.Message);
+    }
+}
+
+
+SZABLON 3: Export
+─────────────────
+void ExportAll(LevelData level)
+{
+    // CSV
+    File.WriteAllText("data.csv", LevelSerializer.ExportToCSV(level));
+    
+    // GraphML
+    File.WriteAllText("map.graphml", LevelSerializer.ExportToGraphML(level));
+    
+    Debug.Log("✓ Wyeksportowano!");
+}
+
+
+SZABLON 4: Menu
+───────────────
+void ShowSaveLoadMenu()
+{
+    var saves = LevelSerializer.GetSavedLevels();
+    
+    foreach (var file in saves)
+    {
+        string name = Path.GetFileNameWithoutExtension(file);
+        Debug.Log($"→ {name}");
+    }
+}
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+                        🎮 GOTOWE DO GRANIA? 🎮
+
+                    Uruchom projekt, kliknij Play
+               Sprób LevelSerializerDemo - zobacz co się dzieje!
+                          Console pokaże wszystko
+
+═══════════════════════════════════════════════════════════════════════════════
+```
+

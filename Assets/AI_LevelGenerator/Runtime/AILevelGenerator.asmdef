@@ -1,0 +1,33 @@
+{
+    "name": "AILevelGenerator",
+    "rootNamespace": "AILevelGenerator",
+    "references": [
+        "UniTask",
+        "Unity.AI.Navigation"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.odin-inspector",
+            "expression": "",
+            "define": "ODIN_INSPECTOR"
+        },
+        {
+            "name": "com.cysharp.unitask",
+            "expression": "",
+            "define": "UNITASK"
+        },
+        {
+            "name": "com.unity.ai.navigation",
+            "expression": "",
+            "define": "AI_NAVIGATION_INSTALLED"
+        }
+    ],
+    "noEngineReferences": false
+}
