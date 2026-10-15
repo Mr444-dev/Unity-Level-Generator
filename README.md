@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/assets/portfolio-mark.svg" alt="🧠 AI Level Generator for Unity logo" width="96" height="96">
+</p>
+
 <h1 align="center">🧠 AI Level Generator for Unity</h1>
 
 <p align="center">
@@ -12,6 +16,10 @@
 </p>
 
 ---
+
+
+
+<p align="center"><a href="#key-features">✨ Key Features</a> &nbsp;·&nbsp; <a href="#getting-started">🚀 Getting Started</a> &nbsp;·&nbsp; <a href="#how-to-use">📖 How to Use</a> &nbsp;·&nbsp; <a href="#customization">🛠️ Customization</a></p>
 
 ## ✨ Key Features
 
